@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import lib from 'lib';
+import App from 'app';
+import { createBrowserHistory } from 'history';
+
+const history = createBrowserHistory();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-      { lib() }
+      <App history={history} />
   </React.StrictMode>
 )
