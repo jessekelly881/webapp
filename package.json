@@ -8,8 +8,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "fp-ts": "^2.12.1",
+    "fp-ts-std": "^0.14.2",
+    "io-ts": "^2.2.16",
+    "io-ts-strings": "^1.0.0",
+    "io-ts-types": "^0.5.16",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "vite-tsconfig-paths": "^3.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
