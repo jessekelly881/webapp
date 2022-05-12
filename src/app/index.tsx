@@ -11,9 +11,11 @@ interface AppP {
 export default ({ history }: AppP) => {
     const route = useCurrentRoute(history);
 
-    return match(route.type)
+    const text = match(route.type)
         .with("Home", () => "Home")
         .with("Test", () => "Test")
         .with("NotFound", () => "404")
         .exhaustive()
+
+    return <span>{ text }</span>
 }
