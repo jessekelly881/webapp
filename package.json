@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@morphic-ts/adt": "^3.0.0",
+    "axios": "^0.27.2",
     "fp-ts": "^2.12.1",
     "fp-ts-routing": "^0.5.4",
     "fp-ts-std": "^0.14.2",
