@@ -1,3 +1,4 @@
+import { describe, test } from 'vitest'
 import { createMemoryHistory } from 'history'
 
 import { format, parse, Route, pushRoute, fullPath } from '.'
