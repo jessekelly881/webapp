@@ -1,0 +1,13 @@
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[[plugins]]
+package = "netlify-plugin-is-website-vulnerable"
+
+[[plugins]]
+package = "netlify-plugin-inline-critical-css"
+
+[[plugins]]
+package = "netlify-plugin-checklinks"
