@@ -8,3 +8,7 @@ package = "netlify-plugin-is-website-vulnerable"
 
 [[plugins]]
 package = "netlify-plugin-inline-critical-css"
+
+[[plugins]]
+  # runs Cypress tests against the deployed URL
+  package = "netlify-plugin-cypress"
