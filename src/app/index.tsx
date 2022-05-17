@@ -3,6 +3,7 @@ import { useCurrentRoute } from 'app/router';
 import { BrowserHistory } from 'history';
 import { match } from 'ts-pattern';
 import State from './state';
+import config from 'config';
 
 
 interface AppP {
@@ -22,5 +23,10 @@ export default ({ history }: AppP) => {
         .with("NotFound", () => "404")
         .exhaustive()
 
-    return <span>{ text }</span>
+    return (
+        <div>
+            { text }
+            <footer>Copyright { config.copyright.year }</footer>
+        </div>
+    )
 }
