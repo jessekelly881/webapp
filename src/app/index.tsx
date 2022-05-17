@@ -26,7 +26,7 @@ export default ({ history }: AppP) => {
     return (
         <div>
             { text }
-            <footer>Copyright { config.copyright.year }</footer>
+            <footer id="app">Copyright { config.copyright.year }</footer>
         </div>
     )
 }
