@@ -12,3 +12,6 @@ package = "netlify-plugin-inline-critical-css"
 [[plugins]]
   # runs Cypress tests against the deployed URL
   package = "netlify-plugin-cypress"
+
+[[plugins]]
+package = "netlify-plugin-image-optim"
