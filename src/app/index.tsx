@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCurrentRoute } from 'app/router';
+import { useCurrentRoute, pushRoute, Route } from 'app/router';
 import { BrowserHistory } from 'history';
 import { match } from 'ts-pattern';
 import State from './state';
@@ -10,6 +10,22 @@ interface AppP {
     history: BrowserHistory
 }
 
+
+interface TemplateP {
+    history: BrowserHistory
+}
+
+interface HomeP extends TemplateP {};
+
+const Home = ({ history }: HomeP) => (
+    <>
+        Home &nbsp;
+        <button type="button" onClick={() => pushRoute(history)(Route.of.Test({}))}>
+            Test
+        </button>
+    </>
+)
+
 export default ({ history }: AppP) => {
     const state: State = {};
     const route = useCurrentRoute(history);
@@ -18,9 +34,9 @@ export default ({ history }: AppP) => {
     console.log(state)
 
     const text = match(route.type)
-        .with("Home", () => "Home")
-        .with("Test", () => "Test")
-        .with("NotFound", () => "404")
+        .with("Home", () => <Home history={history} />)
+        .with("Test", () => <span>Test</span>)
+        .with("NotFound", () => <span>404</span>)
         .exhaustive()
 
     return (
