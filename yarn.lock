@@ -4737,6 +4737,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fp-ts-local-storage@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "fp-ts-local-storage@npm:1.0.3"
+  peerDependencies:
+    fp-ts: ^2.0.1
+  checksum: dec8f4ac718e783e9ba2b2898fdd97cb4b60568c9b9db449878162d82f20a96e679dd3b089e5fa397bb96120047ac9c711a1aa88989133db82f47fc62d651716
+  languageName: node
+  linkType: hard
+
 "fp-ts-routing@npm:^0.5.4":
   version: 0.5.4
   resolution: "fp-ts-routing@npm:0.5.4"
@@ -12391,6 +12400,7 @@ __metadata:
     c8: ^7.11.3
     cypress: ^9.6.1
     fp-ts: ^2.12.1
+    fp-ts-local-storage: ^1.0.3
     fp-ts-routing: ^0.5.4
     fp-ts-std: ^0.14.2
     history: ^5.3.0
