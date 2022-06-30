@@ -1,4 +1,5 @@
 import { assert, expect, test } from 'vitest'
+import App from '.';
 
 // Edit an assertion and save to see HMR in action
 
