@@ -5,6 +5,8 @@ import * as Eq from 'io-ts/Eq';
 import * as D from 'io-ts/Decoder';
 import * as Semi from 'fp-ts/Semigroup';
 import { pipe } from 'fp-ts/function';
+
+
 export { getLocalState } from './localstorage';
 
 
@@ -17,9 +19,9 @@ interface State {
     name?: string;
 }
 
-export const State: S.Schema<State> = S.make((S) =>
-  S.partial({
-    name: S.string,
+export const State: S.Schema<State> = S.make(s =>
+  s.partial({
+    name: s.string,
   })
 )
 
