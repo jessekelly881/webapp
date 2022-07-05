@@ -1,5 +1,5 @@
 import { getItem } from 'fp-ts-local-storage'
-import * as IOE from 'fp-ts/lib/IOEither'
+import * as IOE from 'fp-ts/IOEither'
 import * as E from 'fp-ts/Either'
 import * as O from 'fp-ts/Option'
 import { pipe, flow } from 'fp-ts/function'
@@ -26,3 +26,5 @@ export const getLocalState = pipe(
     )),
     IOE.flattenW,
 )
+
+export default {};

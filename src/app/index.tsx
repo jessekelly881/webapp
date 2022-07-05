@@ -2,8 +2,8 @@ import React from 'react';
 import { useCurrentRoute, pushRoute, Route } from 'app/router';
 import { BrowserHistory } from 'history';
 import { match } from 'ts-pattern';
-import State from './state';
 import config from 'config';
+// import State from './state';
 
 
 interface AppP {
@@ -27,11 +27,8 @@ const Home = ({ history }: HomeP) => (
 )
 
 export default ({ history }: AppP) => {
-    const state: State = {};
+    // const state: State = {};
     const route = useCurrentRoute(history);
-
-
-    console.log(state)
 
     const text = match(route.type)
         .with("Home", () => <Home history={history} />)
