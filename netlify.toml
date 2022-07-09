@@ -3,6 +3,10 @@ from = "/*"
 to = "/index.html"
 status = 200
 
+[dev]
+autoLaunch = false
+command = "vite"
+
 [[plugins]]
 package = "netlify-plugin-is-website-vulnerable"
 

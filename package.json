@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "start": "vite",
+    "start": "netlify dev",
     "build": "tsc && vite build",
     "test": "vitest",
     "clean": "rimraf dist",
@@ -56,6 +56,7 @@
     "eslint-plugin-jsx-a11y": "^6.6.0",
     "eslint-plugin-react": "latest",
     "jsdom": "^19.0.0",
+    "netlify": "^11.0.2",
     "netlify-plugin-cypress": "^2.2.0",
     "typescript": "^4.6.3",
     "vite": "^2.9.9",
