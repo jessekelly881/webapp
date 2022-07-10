@@ -8,6 +8,7 @@ var __export = (target, all) => {
 
 // src/lambda/test.ts
 __export(exports, {
+  default: () => test_default,
   handler: () => handler
 });
 
@@ -19,6 +20,7 @@ var handler = async () => ({
   statusCode: 200,
   body: JSON.stringify({ message: lib_default() })
 });
+var test_default = {};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   handler
