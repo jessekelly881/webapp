@@ -1,0 +1,3 @@
+uses: YieldingExploiter/License-Action@1.0.1
+with:
+  project-root: '.' # Root of the project, contains the package.json
