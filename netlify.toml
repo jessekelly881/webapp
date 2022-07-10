@@ -7,6 +7,9 @@ status = 200
 autoLaunch = false
 command = "vite"
 
+[functions]
+directory = "./src/lambda/"
+
 [[plugins]]
 package = "netlify-plugin-is-website-vulnerable"
 

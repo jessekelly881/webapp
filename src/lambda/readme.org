@@ -1,0 +1,2 @@
+* Lamda Functions
+We place all lamda functions in this folder which is then deployed by netlify.
