@@ -12,7 +12,7 @@ module.exports = {
             },
         },
     },
-    extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+    extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'plugin:jsx-a11y/recommended'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
