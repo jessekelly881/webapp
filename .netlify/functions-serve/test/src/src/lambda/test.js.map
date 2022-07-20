@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../../../../../Users/jessekelly/projects/templates/webapp/src/lambda/test.ts", "../../../../../../Users/jessekelly/projects/templates/webapp/src/lib/index.ts"],
-  "sourceRoot": "/var/folders/lc/y2dbm6r52hj5ljsq41phk2sm0000gn/T/tmp-26074-fKdUAklY1aIW",
+  "sourceRoot": "/var/folders/lc/y2dbm6r52hj5ljsq41phk2sm0000gn/T/tmp-16892-zl88qmUuJ7x8",
   "sourcesContent": ["import { Handler } from \"@netlify/functions\";\nimport lib from 'lib';\n\nconst handler: Handler = async () => ({\n    statusCode: 200,\n    body: JSON.stringify({ message: lib() }),\n});\n\nexport { handler };\nexport default {}\n", "export default () => \"Project Discovery Template\"\n"],
   "mappings": ";;;;;;;;;AAAA;AAAA;AAAA;AAAA;;;ACAA,IAAO,cAAQ,MAAM;;;ADGrB,IAAM,UAAmB,YAAa;AAAA,EAClC,YAAY;AAAA,EACZ,MAAM,KAAK,UAAU,EAAE,SAAS;AAAA;AAIpC,IAAO,eAAQ;",
   "names": []
