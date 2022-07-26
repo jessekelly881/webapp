@@ -10,7 +10,6 @@ interface AppP {
     history: BrowserHistory
 }
 
-
 interface TemplateP {
     history: BrowserHistory
 }
@@ -20,7 +19,11 @@ interface HomeP extends TemplateP {};
 const Home = ({ history }: HomeP) => (
     <>
         Home &nbsp;
-        <button type="button" onClick={() => pushRoute(history)(Route.of.Test({}))}>
+        <button
+            className="text-sm bg-gray-200 px-2 py-1 m-1 text-gray-700"
+            type="button"
+            onClick={() => pushRoute(history)(Route.of.Test({}))}
+        >
             Test
         </button>
     </>
