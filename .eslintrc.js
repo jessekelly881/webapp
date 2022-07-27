@@ -21,8 +21,9 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint', 'fp-ts', 'jsx-a11y'],
+    plugins: ['react', '@typescript-eslint', 'fp-ts', 'jsx-a11y', 'no-secrets'],
     rules: {
+        "no-secrets/no-secrets":"error",
         'react/jsx-filename-extension': [
             2,
             { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
