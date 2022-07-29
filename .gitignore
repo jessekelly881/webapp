@@ -30,3 +30,4 @@ dist-ssr
 !.yarn/sdks
 !.yarn/versions
 .netlify/
+dev-dist/
