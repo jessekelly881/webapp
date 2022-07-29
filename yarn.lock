@@ -1034,6 +1034,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^10.3.6":
+  version: 10.17.60
+  resolution: "@types/node@npm:10.17.60"
+  checksum: 2cdb3a77d071ba8513e5e8306fa64bf50e3c3302390feeaeff1fd325dd25c8441369715dfc8e3701011a72fed5958c7dfa94eb9239a81b3c286caa4d97db6eef
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:^14.14.11, @types/node@npm:^14.14.31":
   version: 14.18.18
   resolution: "@types/node@npm:14.18.18"
@@ -11028,7 +11035,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"progress@npm:2.0.3, progress@npm:^2.0.1":
+"progress@npm:2.0.3, progress@npm:^2.0.1, progress@npm:^2.0.3":
   version: 2.0.3
   resolution: "progress@npm:2.0.3"
   checksum: f67403fe7b34912148d9252cb7481266a354bd99ce82c835f79070643bb3c6583d10dbcfda4d41e04bbc1d8437e9af0fb1e1f2135727878f5308682a579429b7
@@ -11327,6 +11334,15 @@ __metadata:
   bin:
     rc: ./cli.js
   checksum: 2e26e052f8be2abd64e6d1dabfbd7be03f80ec18ccbc49562d31f617d0015fbdbcf0f9eed30346ea6ab789e0fdfe4337f033f8016efdbee0df5354751842080e
+  languageName: node
+  linkType: hard
+
+"rd@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "rd@npm:2.0.1"
+  dependencies:
+    "@types/node": ^10.3.6
+  checksum: 68ebe0f8ecde72d831032cb56a196789e3b785167b4801f264ed1794465c42f407e726fd7f0a03488cbe0ace006eab2c2df415427fafac0d409f3d30a04b14c4
   languageName: node
   linkType: hard
 
@@ -13982,6 +13998,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vite-plugin-progress@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "vite-plugin-progress@npm:0.0.3"
+  dependencies:
+    picocolors: ^1.0.0
+    progress: ^2.0.3
+    rd: ^2.0.1
+  peerDependencies:
+    vite: ">2.0.0-0"
+  checksum: 9c9c23fb9260efc080cf9645209b7e884642e2d211d1905ae1002ae4e6d7ad2d2ede648a56d7f24fa10f2942ff8f689f6070b9fe0fd8bdb8d1367ca0e7a011d5
+  languageName: node
+  linkType: hard
+
 "vite-tsconfig-paths@npm:^3.4.1":
   version: 3.4.1
   resolution: "vite-tsconfig-paths@npm:3.4.1"
@@ -14192,6 +14221,7 @@ __metadata:
     typescript: ^4.6.3
     url: ^0.11.0
     vite: ^2.9.9
+    vite-plugin-progress: ^0.0.3
     vite-tsconfig-paths: ^3.4.1
     vitest: ^0.17.0
   languageName: unknown

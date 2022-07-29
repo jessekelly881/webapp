@@ -20,7 +20,7 @@ const Home = ({ history }: HomeP) => (
     <>
         Home &nbsp;
         <button
-            className="text-sm bg-gray-200 px-2 py-1 m-1 text-gray-700"
+            className="text-sm bg-gray-200 px-2 py-1 m-1 text-gray-700 rounded-sm hover:shadow-sm duration"
             type="button"
             onClick={() => pushRoute(history)(Route.of.Test({}))}
         >
