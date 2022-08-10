@@ -1,6 +1,7 @@
 {
   "name": "webapp",
   "private": true,
+  "homepage": ".",
   "version": "0.0.0",
   "scripts": {
     "start": "netlify dev",
@@ -51,6 +52,7 @@
     "autoprefixer": "^10.4.7",
     "c8": "^7.11.3",
     "cypress": "^9.6.1",
+    "docs-ts": "^0.6.10",
     "eslint": "^8.19.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
