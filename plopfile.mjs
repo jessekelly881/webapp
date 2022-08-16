@@ -11,7 +11,7 @@ export default (plop) => {
     actions: [
       {
         type: "add",
-        path: "src/lib/types/{{name}}/index.ts",
+        path: "src/lib/types/{{ camelCase name }}/index.ts",
         templateFile: ".templates/schema.hbs",
       },
     ],

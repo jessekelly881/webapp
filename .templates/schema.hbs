@@ -2,15 +2,15 @@ import * as D from "io-ts/Decoder";
 import * as Eq from "io-ts/Eq";
 import * as S from "io-ts/Schema";
 
-const Schema = S.make(s =>
+const {{ pascalCase name }} = S.make(s =>
   s.struct({
     name: s.string,
     age: s.number,
   })
 );
 
-const decoder = S.interpreter(D.Schemable)(Schema);
-const eq = S.interpreter(Eq.Schemable)(Schema);
+const decoder = S.interpreter(D.Schemable)({{ pascalCase name }});
+const eq = S.interpreter(Eq.Schemable)({{ pascalCase name }});
 
-export default Schema;
+export default {{ pascalCase name }};
 export { decoder, eq };
