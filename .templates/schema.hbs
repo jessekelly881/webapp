@@ -1,0 +1,16 @@
+import * as D from "io-ts/Decoder";
+import * as Eq from "io-ts/Eq";
+import * as S from "io-ts/Schema";
+
+const Schema = S.make(s =>
+  s.struct({
+    name: s.string,
+    age: s.number,
+  })
+);
+
+const decoder = S.interpreter(D.Schemable)(Schema);
+const eq = S.interpreter(Eq.Schemable)(Schema);
+
+export default Schema;
+export { decoder, eq };

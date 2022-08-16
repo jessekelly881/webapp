@@ -6,6 +6,7 @@
   "scripts": {
     "start": "netlify dev",
     "build": "tsc && vite build",
+    "gen": "plop",
     "test": "vitest",
     "clean": "rimraf dist",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
@@ -65,6 +66,7 @@
     "netlify-plugin-cypress": "^2.2.0",
     "netlify-plugin-hashfiles": "^4.0.2",
     "netlify-plugin-image-optim": "^0.4.0",
+    "plop": "^3.1.1",
     "postcss": "^8.4.14",
     "storybook": "^6.5.10",
     "tailwindcss": "^3.1.6",
