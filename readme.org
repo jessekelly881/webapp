@@ -19,3 +19,13 @@ This template uses [[https://vitejs.dev/][vite]] v3 which requires npm v16 or ab
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install v16
 #+end_src
+
+
+** Code generation
+
+Example:
+#+begin_src bash
+yarn gen schema
+#+end_src
+
+Creates an io-ts schema at lib/types/{name}
