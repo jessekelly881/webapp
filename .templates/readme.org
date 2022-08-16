@@ -1,1 +1,8 @@
 Code templates
+
+#+begin_src bash
+yarn gen schema
+#+end_src
+
+- [x] *schema*: io-ts schema
+- [ ] *test*: generate test file
