@@ -5,6 +5,52 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@amplitude/analytics-browser@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@amplitude/analytics-browser@npm:1.2.0"
+  dependencies:
+    "@amplitude/analytics-connector": ^1.4.5
+    "@amplitude/analytics-core": ^0.8.0
+    "@amplitude/analytics-types": ^0.8.0
+    "@amplitude/ua-parser-js": ^0.7.31
+    tslib: ^2.3.1
+  checksum: 400fb0589d4eaff0c61623285f51a2feb75487c410d15ad6fe34e00390736cc0bb123781b4ca9241b8507922c4082e913d7400aaf7df3b79f4aea92805b1910c
+  languageName: node
+  linkType: hard
+
+"@amplitude/analytics-connector@npm:^1.4.5":
+  version: 1.4.5
+  resolution: "@amplitude/analytics-connector@npm:1.4.5"
+  dependencies:
+    "@amplitude/ua-parser-js": 0.7.31
+  checksum: 3c030167b008216bffca9411e0af80c327ec6e2c75b151566d38770abd5c7aa978372e05cebdb180b1e8b6e43753296783c62fef0a234afa26105e9c12a1aadc
+  languageName: node
+  linkType: hard
+
+"@amplitude/analytics-core@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "@amplitude/analytics-core@npm:0.8.0"
+  dependencies:
+    "@amplitude/analytics-types": ^0.8.0
+    tslib: ^2.3.1
+  checksum: 492806dfe125e95200e66644dda5e71fd1c2f41e138294a15c8a4fa23d1edabc40437effb85f71c183b1a105f2b5aff2885f64c7137cc988946785a011eb2f59
+  languageName: node
+  linkType: hard
+
+"@amplitude/analytics-types@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "@amplitude/analytics-types@npm:0.8.0"
+  checksum: a9e258087140b85bd4db61714c0b3957026717027b6a3bf293baf20ecfd9e28d59954d6cbd7516d16493b6ae760c018c9cc9d5a5715393e5c4af3f4a06cf0c28
+  languageName: node
+  linkType: hard
+
+"@amplitude/ua-parser-js@npm:0.7.31, @amplitude/ua-parser-js@npm:^0.7.31":
+  version: 0.7.31
+  resolution: "@amplitude/ua-parser-js@npm:0.7.31"
+  checksum: c72e7c8656dd77a6c2ece9e3817929022aeadf731470e53fecddce03232d87977fd5b09d76c570a2a5bed97f5dd463fe6379aac7a6c4b2d2393f14486d385eec
+  languageName: node
+  linkType: hard
+
 "@ampproject/remapping@npm:^2.1.0":
   version: 2.2.0
   resolution: "@ampproject/remapping@npm:2.2.0"
@@ -19591,7 +19637,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.1.0":
+"tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.1":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
@@ -20713,6 +20759,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "webapp@workspace:."
   dependencies:
+    "@amplitude/analytics-browser": ^1.2.0
     "@commitlint/cli": ^17.0.3
     "@commitlint/config-conventional": ^17.0.3
     "@morphic-ts/adt": ^3.0.0
