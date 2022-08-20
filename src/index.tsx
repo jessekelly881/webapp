@@ -5,6 +5,13 @@ import { createBrowserHistory } from 'history';
 import * as Amp from '@amplitude/analytics-browser';
 import "./index.css"
 
+/*
+ * Feature flags
+ * TODO: Fetch from LaunchDarkly
+ */
+const featureFlags = {
+    testFlag: true
+}
 
 /*
  * Amplitude
@@ -13,8 +20,9 @@ import "./index.css"
 const amplifyKey = process.env?.AMPLITUDE_KEY;
 if (amplifyKey) {
     Amp.init(amplifyKey);
-    Amp.track('Init');
+    Amp.track('Flags set', featureFlags);
 }
+
 
 const history = createBrowserHistory();
 
