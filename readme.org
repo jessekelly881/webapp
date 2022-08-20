@@ -13,11 +13,12 @@ yarn start
 
 
 ** Vite
-This template uses [[https://vitejs.dev/][vite]] v3 which requires npm v16 or above. You can use nvm to set the current node version to v16.
+
 
 #+begin_src bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install v16
+nvm alias default 16 // Set default to v16
 #+end_src
 
 
