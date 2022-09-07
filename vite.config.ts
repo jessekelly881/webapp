@@ -23,6 +23,6 @@ export default defineConfig({
   test: {
     watch: false,
     globals: true,
-    environment: 'node'
+    environment: 'jsdom'
   },
 })

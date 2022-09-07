@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { pipe } from 'fp-ts/function'
 import * as R from 'fp-ts-routing'
-import { routingFromMatches2} from 'morphic-ts-routing/dist/RoutingFromMatches2'
+import { routingFromMatches2 } from 'morphic-ts-routing/dist/RoutingFromMatches2'
 import { ADTType } from '@morphic-ts/adt'
 import { BrowserHistory, Location } from 'history'
 
@@ -21,9 +21,9 @@ type Route = ADTType<typeof Route>
 
 const pushRoute =
     ({ push }: BrowserHistory) =>
-    (route: Route) => {
-        push(format(route))
-    }
+        (route: Route) => {
+            push(format(route))
+        }
 
 const fullPath = (location: Location) => location.pathname + location.search
 
@@ -34,4 +34,7 @@ const useCurrentRoute = (history: BrowserHistory) => {
     return pipe(pathname, parse)
 }
 
-export { Route, parse, format, useCurrentRoute, pushRoute, fullPath }
+
+const testRoute = () => ({ type: "Test" } as Route);
+
+export { Route, parse, format, useCurrentRoute, pushRoute, fullPath, testRoute }
