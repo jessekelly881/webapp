@@ -5,7 +5,10 @@
 
 version: 2
 updates:
-  - package-ecosystem: "yarn" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "yarn"
+    directory: "/"
     schedule:
       interval: "weekly"
+      time: '13:00'
+    labels:
+      - type:dependencies
