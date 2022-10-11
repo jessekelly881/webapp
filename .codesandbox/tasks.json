@@ -1,0 +1,14 @@
+{
+  "setupTasks": ["yarn install"],
+  "tasks": {
+    "install-dependencies": {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    },
+    "start-app": {
+      "name": "Run Dev Server",
+      "command": "yarn start",
+      "runAtStart": true
+    }
+  }
+}
