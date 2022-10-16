@@ -43,6 +43,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "rimraf": "^3.0.2",
+    "rollup-plugin-visualizer": "^5.8.3",
     "sass": "^1.55.0",
     "ts-pattern": "^4.0.5",
     "url": "^0.11.0",

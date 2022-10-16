@@ -6,6 +6,7 @@ import react from '@vitejs/plugin-react'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import progress from 'vite-plugin-progress';
 import handlebars from 'vite-plugin-handlebars';
+import { visualizer } from "rollup-plugin-visualizer";
 
 
 export default defineConfig({
@@ -18,6 +19,9 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
     progress(),
+    visualizer({
+      emitFile: true,
+    })
   ],
   server: {
     host: true
