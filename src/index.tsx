@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from 'app';
 import { createBrowserHistory } from 'history';
-import * as Amp from '@amplitude/analytics-browser';
 import "./index.css"
 import { pushRoute, useCurrentRoute } from 'app/router';
 
@@ -19,8 +18,13 @@ const featureFlags = {
  */
 const amplifyKey = process.env?.AMPLITUDE_KEY;
 if (amplifyKey) {
-    Amp.init(amplifyKey);
-    Amp.track('Flags set', featureFlags);
+    /*
+     * Should be async loaded to reduce bundle size
+     */
+    import('@amplitude/analytics-browser').then(amp => {
+        amp.init(amplifyKey);
+        amp.track('Flags set', featureFlags);
+    })
 }
 
 const history = createBrowserHistory();
