@@ -48,6 +48,7 @@
     "ts-pattern": "^4.0.5",
     "url": "^0.11.0",
     "vite": "^3.1.7",
+    "vite-plugin-favicon": "^1.0.8",
     "vite-plugin-handlebars": "^1.6.0",
     "vite-plugin-pwa": "^0.13.1",
     "vite-tsconfig-paths": "^3.5.1"

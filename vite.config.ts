@@ -30,14 +30,14 @@ export default defineConfig({
         description: config.description,
         icons: [
           {
-            src: 'src/logo.svg',
+            src: 'android-chrome-192x192.png',
             sizes: '192x192',
-            type: 'image/svg'
+            type: 'image/png'
           },
           {
-            src: 'src/logo.svg',
+            src: 'android-chrome-512x512.png',
             sizes: '512x512',
-            type: 'image/svg'
+            type: 'image/png'
           },
         ]
       },
