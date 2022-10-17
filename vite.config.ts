@@ -47,6 +47,8 @@ export default defineConfig({
     }),
     visualizer({ // last
       emitFile: true,
+      gzipSize: true,
+      brotliSize: true,
     }),
   ],
   server: {
