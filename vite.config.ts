@@ -7,21 +7,47 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import progress from 'vite-plugin-progress';
 import handlebars from 'vite-plugin-handlebars';
 import { visualizer } from "rollup-plugin-visualizer";
+import { VitePWA } from 'vite-plugin-pwa'
+import config from "./src/config";
 
 
 export default defineConfig({
   plugins: [
     handlebars({
       context: {
-        title: "Template",
+        title: config.name,
+        description: config.description
       },
     }),
     react(),
     tsconfigPaths(),
     progress(),
-    visualizer({
+    VitePWA({
+      registerType: 'autoUpdate',
+      manifest: {
+        name: config.name,
+        short_name: config.name,
+        description: config.description,
+        icons: [
+          {
+            src: 'src/logo.svg',
+            sizes: '192x192',
+            type: 'image/svg'
+          },
+          {
+            src: 'src/logo.svg',
+            sizes: '512x512',
+            type: 'image/svg'
+          },
+        ]
+      },
+      devOptions: {
+        enabled: true
+      },
+    }),
+    visualizer({ // last
       emitFile: true,
-    })
+    }),
   ],
   server: {
     host: true
