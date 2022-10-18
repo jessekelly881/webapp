@@ -8,7 +8,9 @@ import progress from 'vite-plugin-progress';
 import handlebars from 'vite-plugin-handlebars';
 import { visualizer } from "rollup-plugin-visualizer";
 import { VitePWA } from 'vite-plugin-pwa'
+import { qrcode } from 'vite-plugin-qrcode';
 import config from "./src/config";
+
 
 
 export default defineConfig({
@@ -22,6 +24,7 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
     progress(),
+    qrcode(),
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {

@@ -51,6 +51,7 @@
     "vite-plugin-favicon": "^1.0.8",
     "vite-plugin-handlebars": "^1.6.0",
     "vite-plugin-pwa": "^0.13.1",
+    "vite-plugin-qrcode": "^0.2.0",
     "vite-tsconfig-paths": "^3.5.1"
   },
   "devDependencies": {

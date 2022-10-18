@@ -23069,6 +23069,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vite-plugin-qrcode@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "vite-plugin-qrcode@npm:0.2.0"
+  dependencies:
+    qrcode-terminal: ^0.12.0
+  peerDependencies:
+    vite: ^3.0.0
+  checksum: b6c73fa5336f5e947419a0098a0551125787f971a9ae82ab939aad7d431d35d1294fc3b5fb64f99d9b71857c4c1714d584bf61a4a1218bc5cdf8e5bcb0c5efed
+  languageName: node
+  linkType: hard
+
 "vite-tsconfig-paths@npm:^3.5.1":
   version: 3.5.1
   resolution: "vite-tsconfig-paths@npm:3.5.1"
@@ -23343,6 +23354,7 @@ __metadata:
     vite-plugin-handlebars: ^1.6.0
     vite-plugin-progress: ^0.0.5
     vite-plugin-pwa: ^0.13.1
+    vite-plugin-qrcode: ^0.2.0
     vite-tsconfig-paths: ^3.5.1
     vitest: ^0.24.1
   languageName: unknown
