@@ -9,8 +9,8 @@ import handlebars from 'vite-plugin-handlebars';
 import { visualizer } from "rollup-plugin-visualizer";
 import { VitePWA } from 'vite-plugin-pwa'
 import { qrcode } from 'vite-plugin-qrcode';
+import { Schema, ValidateEnv } from "@julr/vite-plugin-validate-env";
 import config from "./src/config";
-
 
 
 export default defineConfig({
@@ -53,6 +53,10 @@ export default defineConfig({
       gzipSize: true,
       brotliSize: true,
     }),
+    ValidateEnv({
+      // Verifies that an env variable exists and validates type. E.g.
+      // A_KEY: Schema.string()
+    })
   ],
   server: {
     open: true,
