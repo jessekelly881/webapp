@@ -28,6 +28,7 @@ if (amplifyKey) {
 }
 
 const history = createBrowserHistory();
+console.log("test")
 
 const Index = () => {
     const route = useCurrentRoute(history);
