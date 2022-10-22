@@ -11,7 +11,8 @@ import { VitePWA } from 'vite-plugin-pwa'
 import { qrcode } from 'vite-plugin-qrcode';
 import { Schema, ValidateEnv } from "@julr/vite-plugin-validate-env";
 import config from "./src/config";
-import strip from '@rollup/plugin-strip';
+import removeConsole from "vite-plugin-remove-console";
+import Inspect from 'vite-plugin-inspect'
 
 
 export default defineConfig({
@@ -23,7 +24,7 @@ export default defineConfig({
       },
     }),
     react(),
-    { ...strip(), apply: "build" },
+    removeConsole(),
     tsconfigPaths(),
     progress(),
     qrcode(),
@@ -59,6 +60,7 @@ export default defineConfig({
       // Verifies that an env variable exists and validates type. E.g.
       // A_KEY: Schema.string()
     }),
+    Inspect()
   ],
   server: {
     open: true,
