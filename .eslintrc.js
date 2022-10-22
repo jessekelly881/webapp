@@ -48,6 +48,7 @@ module.exports = {
             namedComponents: "arrow-function",
             unnamedComponents: "arrow-function",
         }],
-        'no-unused-expressions': 'off'
+        'no-unused-expressions': 'off',
+        'react/react-in-jsx-scope': "off"
     },
 }
