@@ -1,8 +1,8 @@
+import Home from 'app/layouts/home';
+import { Route } from 'app/router';
+import config from 'config';
 import React from 'react';
 import { match } from 'ts-pattern';
-import config from 'config';
-import { Route } from 'app/router';
-import Home from 'app/layouts/home';
 
 
 interface AppP {

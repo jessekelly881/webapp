@@ -1,37 +1,28 @@
+import "./index.css"
+
+import App from 'app';
+import { pushRoute, useCurrentRoute } from 'app/router';
+import { createBrowserHistory } from 'history';
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from 'app';
-import { createBrowserHistory } from 'history';
-import "./index.css"
-import { pushRoute, useCurrentRoute } from 'app/router';
-
-/*
- * Feature flags
- * TODO: Fetch from LaunchDarkly
- */
-const featureFlags = {
-    testFlag: true
-}
 
 /*
  * Amplitude
  */
 const amplifyKey = process.env?.AMPLITUDE_KEY;
-if (amplifyKey) {
-    /*
-     * Should be async loaded to reduce bundle size
-     */
-    import('@amplitude/analytics-browser').then(amp => {
-        amp.init(amplifyKey);
-        amp.track('Flags set', featureFlags);
-    })
-}
+
 
 const history = createBrowserHistory();
 console.log("test")
 
 const Index = () => {
+    const [, setAmplitudeInstance] = React.useState();
     const route = useCurrentRoute(history);
+
+    import('@amplitude/analytics-browser').then(amp => {
+        amp.init(amplifyKey);
+        setAmplitudeInstance(null)
+    }).catch(() => setAmplitudeInstance(null))
 
     return (
         <React.StrictMode>
@@ -40,4 +31,4 @@ const Index = () => {
     )
 }
 
-ReactDOM.createRoot(document.getElementById('root')!).render(<Index />)
+ReactDOM.createRoot(document.querySelector('#root')!).render(<Index />)

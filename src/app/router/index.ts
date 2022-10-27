@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { ADTType } from '@morphic-ts/adt'
 import { pipe } from 'fp-ts/function'
 import * as R from 'fp-ts-routing'
-import { routingFromMatches2 } from 'morphic-ts-routing/dist/RoutingFromMatches2'
-import { ADTType } from '@morphic-ts/adt'
 import { BrowserHistory, Location } from 'history'
+import { routingFromMatches2 } from 'morphic-ts-routing/dist/RoutingFromMatches2'
+import { useState } from 'react'
 
 const home = R.end
 const test = R.lit('test').then(R.end)
@@ -37,4 +37,4 @@ const useCurrentRoute = (history: BrowserHistory) => {
 
 const testRoute = () => ({ type: "Test" } as Route);
 
-export { Route, parse, format, useCurrentRoute, pushRoute, fullPath, testRoute }
+export { format, fullPath, parse, pushRoute, Route, testRoute,useCurrentRoute }

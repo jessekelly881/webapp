@@ -1,9 +1,10 @@
-import { getItem } from 'fp-ts-local-storage'
-import * as IOE from 'fp-ts/IOEither'
 import * as E from 'fp-ts/Either'
+import { flow,pipe } from 'fp-ts/function'
+import * as IOE from 'fp-ts/IOEither'
 import * as O from 'fp-ts/Option'
-import { pipe, flow } from 'fp-ts/function'
+import { getItem } from 'fp-ts-local-storage'
 import * as J from 'fp-ts-std/JSON';
+
 import * as S from '.';
 
 const key = "state";

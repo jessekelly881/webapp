@@ -1,10 +1,10 @@
 import * as A from 'fp-ts/Array';
-import * as NEA from 'fp-ts/NonEmptyArray';
-import * as S from 'io-ts/Schema';
-import * as Eq from 'io-ts/Eq';
-import * as D from 'io-ts/Decoder';
-import * as Semi from 'fp-ts/Semigroup';
 import { pipe } from 'fp-ts/function';
+import * as NEA from 'fp-ts/NonEmptyArray';
+import * as Semi from 'fp-ts/Semigroup';
+import * as D from 'io-ts/Decoder';
+import * as Eq from 'io-ts/Eq';
+import * as S from 'io-ts/Schema';
 
 
 export { getLocalState } from './localstorage';
